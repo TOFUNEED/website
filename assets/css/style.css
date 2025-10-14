@@ -46,10 +46,25 @@ img {
 }
 
 .header-logo {
+  /* 変更: テキストスタイルを削除し、画像表示のスタイルを追加 */
+  font-size: 0; /* テキストが見えないようにする */
+  line-height: 1;
+}
+
+.header-logo img {
+  /* ロゴ画像の高さを調整 */
+  height: 30px; 
+  width: auto;
+  max-width: none;
+}
+/* 元のheader-logoのスタイルを削除・調整しました */
+/*
+.header-logo {
   font-size: 24px;
   font-weight: bold;
   color: var(--accent-color);
 }
+*/
 
 .header-nav ul {
   margin: 0;
